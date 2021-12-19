@@ -1,0 +1,43 @@
+/* li and text of footer */
+#social-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  /* color: rgb(230, 0, 35); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  background-color: white;
+  
+}
+.foot-text{
+  text-align: center;
+}
+#licolor li{
+color: white !important;
+}
+
+#divH h4 {
+    color: white !important;
+}
+#rightreser {
+ color: white !important;
+}
+/* footer logo */
+#imglogo {
+  margin-top: 3px;
+  height: 80px;
+  width:90px;
+  border-radius: 50%;
+
+}
+#img-size{
+  border-radius: 5px;
+}
+.partsize{
+  padding: 3px;
+}
+#logodiv{
+  align-items: center !important;
+}

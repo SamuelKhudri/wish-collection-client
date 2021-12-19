@@ -1,0 +1,30 @@
+.user-img{
+    border-radius: 50% !important;
+    padding: 50px;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    /* width: 200px !important; */
+}
+.shipping-form{
+    margin:30px 380px;
+}
+.shipping-form input {
+    display: block;
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+.error{
+    color: red;
+}
+.ba-color-p{   
+    background-color:rgb(0, 0, 0);
+    background-size: cover !important;   
+}
+#text-color{
+    color:'white';
+}
