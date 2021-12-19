@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import logimg from '../../../image/diamond thums.png';
+import logimg from '../../../image/login.jpg';
 const Login = () => {
     const [loginData, setLoginData] = useState({})
     const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
@@ -31,7 +31,7 @@ const Login = () => {
         signInWithGoogle(location, history)
     }
     return (
-        <Container>
+        <Container style={{ backgroundColor: 'crimson' }}>
             <Grid sx={{ m: 3 }} container spacing={2}>
                 <Grid sx={{ mt: 2 }} item xs={12} md={6}>
                     <Typography variant="body1" gutterBottom>Log in</Typography>
@@ -56,7 +56,7 @@ const Login = () => {
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/register">
-                            <Button variant="text">New User? Please Register</Button>
+                            <Button style={{ color: '#1976D2' }} variant="text"><span style={{ color: 'white' }}>New User?..</span>Please Register</Button>
                         </NavLink>
                         {/* handle error massage and alert */}
                         {isLoading && <CircularProgress />}

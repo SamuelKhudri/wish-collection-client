@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import logimg from '../../../image/diamond thums.png';
+import logimg from '../../../image/login.jpg';
 const Register = () => {
     const [loginData, setLoginData] = useState({})
     const { user, authError, registerUser, isLoading } = useAuth();
@@ -29,7 +29,7 @@ const Register = () => {
         e.preventDefault();
     }
     return (
-        <Container>
+        <Container style={{ backgroundColor: 'crimson' }}>
             <Grid sx={{ m: 3 }} container spacing={2}>
                 <Grid sx={{ mt: 2 }} item xs={12} md={6}>
                     <Typography variant="body1" gutterBottom>Please Register</Typography>
@@ -70,7 +70,7 @@ const Register = () => {
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/login">
-                            <Button variant="text">Already registered? Go Login</Button>
+                            <Button style={{ color: '#1976D2' }} variant="text"><span style={{ color: 'white' }}>Already registered?..</span> Go Login</Button>
                         </NavLink>
                     </form>}
                     {isLoading && <CircularProgress />}

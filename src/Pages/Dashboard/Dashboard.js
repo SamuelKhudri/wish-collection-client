@@ -167,7 +167,8 @@ function Dashboard(props) {
                 </Drawer>
             </Box>
             <Box
-                className="dash-bg"
+                style={{ backgroundColor: 'rgb(9, 6, 22)', backgroundSize: 'cover' }}
+                className=""
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >

@@ -1,12 +1,12 @@
 /* heading classs */
 .commonBorder{
-    background: #ff4a57;
+    background: hsl(356, 100%, 65%);
     height: 3px;
     width: 100px;
     margin: 30px auto;
 }
 #text-c{
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
     font-weight: 500;
     font-size: 30px;
     }
@@ -29,6 +29,7 @@
     .project{
         background-color: #191919;
         padding-top: 70px;
+        background-size: cover;
     }
     img.project__img {
         border-radius: 10px;
