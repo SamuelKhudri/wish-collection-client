@@ -7,7 +7,7 @@ const ShowReview = () => {
     const [review, setReview] = useState([])
     // fake data call-------------
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://warm-temple-88396.herokuapp.com/review')
             .then(res => res.json())
             .then(data => setReview(data))
     }, []);

@@ -85,7 +85,7 @@ const useFirebase = () => {
     // admin fetch from database users collection
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://warm-temple-88396.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email]);
@@ -102,7 +102,7 @@ const useFirebase = () => {
     // get new users register data here
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('http://localhost:5000/users', {
+        fetch('https://warm-temple-88396.herokuapp.com/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
