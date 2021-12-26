@@ -9,7 +9,7 @@ import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
     return (
-        <div className='ba-color'>
+        <div className=''>
             <Navbar></Navbar>
             <Banner></Banner>
             <Categories></Categories>

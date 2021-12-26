@@ -20,7 +20,7 @@ const PlaceOrder = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
-    }, []);
+    }, [id]);
 
     // handle submitting data
     const onSubmit = data => {
@@ -65,18 +65,21 @@ const PlaceOrder = () => {
                         <br />
                         <br />
                         {errors.email && <span className="error">This field is required</span>}
+                        <h4 className="text">Buyer name</h4>
                         <input style={{ lineHeight: "40px", width: "75%" }} defaultValue={user.displayName} {...register("username")} />
-                        <h4 className="text">Product name</h4>
+                        <h4 className="text"> Your ordered id</h4>
                         <input style={{ lineHeight: "40px", width: "75%" }} defaultValue={id} {...register("orderid")} />
-                        <h4 className="text">Your ordered id</h4>
+                        <h4 className="text">Product name </h4>
                         <input style={{ lineHeight: "40px", width: "75%" }} type="text" defaultValue={item.name} {...register("productName", { required: true })} />
                         <h4>Your Shipping address</h4>
                         <input style={{ lineHeight: "40px", width: "75%" }} placeholder="Address" defaultValue="" {...register("address")} />
                         <h4>Your number</h4>
                         <input style={{ lineHeight: "40px", width: "75%" }} placeholder="phone number" defaultValue="" {...register("phone")} />
+                        <h4>Product Cost</h4>
+                        <input style={{ lineHeight: "40px", width: "75%" }} defaultValue={item.cost} {...register("cost", { required: true })} />
                         <br />
                         <input style={{ width: "30%" }} className="btn" type="Submit" value="Submit" />
-                        <p>Please click 3 times carefully</p>
+
                     </form>
                 </div>
             </div>

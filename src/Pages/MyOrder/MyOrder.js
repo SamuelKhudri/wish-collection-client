@@ -79,12 +79,14 @@ const MyOrder = () => {
 
                                 </Card>
                                 <button className="btn" onClick={() => handleDelUser(order._id)} >Cancel</button>
-                                <Link className="btn" to="/allproducts">TakeMoreOrder</Link>
+                                <Link className="btn" to={`/dashboard/payment/${order._id}`}>PayNow</Link>
+                                <Link className="btn" to="/allproducts">MoreOrder</Link>
                             </Box>
                         </Grid>
                         )
                     }
-                </Grid></Container>
+                </Grid>
+            </Container>
         </Box>
 
     );

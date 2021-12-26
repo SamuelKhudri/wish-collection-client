@@ -47,7 +47,7 @@ function Dashboard(props) {
             <Toolbar />
             <Divider />
             {
-                admin ? <Box>
+                admin ? <Box >
                     <br />
                     <Link to={`${url}/makeadmin`}>
                         <Button variant="contained" color="success"> Make-Admin</Button>
@@ -78,11 +78,11 @@ function Dashboard(props) {
 
                         </Link>
                         <br /><br />
-                        <Link to={`${url}/payment`}>
+                        {/* <Link to={`${url}/payment`}>
                             <Button variant="contained" color="success">Payment</Button>
 
-                        </Link>
-                        <br /><br />
+                        </Link> */}
+
                         <Link to={`${url}/myorder`}>
                             <Button variant="contained" color="success">Your Order</Button>
 
@@ -173,7 +173,7 @@ function Dashboard(props) {
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
-                <Typography paragraph>
+                <Typography paragraph >
                     <Switch>
                         <Route exact path={path}>
                             <DashHome></DashHome>
@@ -184,7 +184,7 @@ function Dashboard(props) {
                         <Route path={`${path}/addproduct`}>
                             <AddProducts></AddProducts>
                         </Route>
-                        <Route path={`${path}/payment`}>
+                        <Route path={`${path}/payment/:orderId`}>
                             <Payment></Payment>
                         </Route>
                         <Route path={`${path}/manageproducts`}>
