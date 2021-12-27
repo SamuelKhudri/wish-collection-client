@@ -17,6 +17,7 @@ import Register from './Pages/LoginPage/Register/Register';
 import PrivateRoute from './Pages/LoginPage/PrivateRoute/PrivateRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import OrderUpdate from './Pages/Dashboard/OrderUpdata/OrderUpdate';
+import MyOrder from './Pages/MyOrder/MyOrder';
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard/myorder">
+              <MyOrder></MyOrder>
             </PrivateRoute>
             <PrivateRoute path="/orders/update/:id">
               <OrderUpdate></OrderUpdate>

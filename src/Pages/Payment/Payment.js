@@ -22,9 +22,12 @@ const Payment = () => {
             <h1 >Please Complete Payment for: <span>{payment.productName}</span></h1>
             <h4>{orderId}</h4>
             <h4>Pay:${payment.cost}</h4>
-            <Elements stripe={stripePromise}>
-                <CheckoutForm payment={payment}></CheckoutForm>
-            </Elements>
+            {payment?.cost &&
+                <Elements stripe={stripePromise}>
+                    <CheckoutForm payment={payment}></CheckoutForm>
+                </Elements>
+            }
+
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 // import { NavLink } from 'react-router-dom';
@@ -6,8 +6,18 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth'
 import logo from "../../images/logo.png";
 import './Navbar.css';
+
 const Navbar = () => {
     const { user, logout } = useAuth();
+
+    // orders fetch based on email because of showing cart
+    const [order, setOrder] = useState([]);
+    useEffect(() => {
+        const url = `http://localhost:5000/orders/cart?email=${user.email}`
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setOrder(data));
+    }, []);
     return (
         <div className='nav-p'>
             <div className="navmother">
@@ -34,6 +44,11 @@ const Navbar = () => {
                                         <li className="nav-item">
                                             <Link className="nav-link active" aria-current="page" to="/">{user.displayName}</Link>
                                         </li>
+                                        <Link to="/dashboard/myorder" style={{ listStyle: 'none', paddingTop: '8px' }}>
+                                            <Badge badgeContent={order.length} color="primary">
+                                                <ShoppingCartOutlined style={{ color: "white" }} />
+                                            </Badge>
+                                        </Link>
 
 
                                     </>
@@ -43,11 +58,6 @@ const Navbar = () => {
                                         <Link className="nav-link active" aria-current="page" to="/login">Register</Link>
                                     </li>
                                 )}
-                                <li style={{ listStyle: 'none', paddingTop: '8px' }}>
-                                    <Badge badgeContent={5} color="primary">
-                                        <ShoppingCartOutlined style={{ color: "white" }} />
-                                    </Badge>
-                                </li>
                                 <li style={{ paddingTop: '8px', listStyle: 'none' }}><span style={{ cursor: 'pointer', color: 'white', fontWeight: '500' }}>EN</span></li>
                             </ul>
 

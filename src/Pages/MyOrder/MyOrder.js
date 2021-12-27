@@ -74,12 +74,18 @@ const MyOrder = () => {
                                         <Typography sx={{ mb: 1.5 }} color="text.secondary">
                                             Phone:  {order.phone}
                                         </Typography>
+                                        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                                            Cost: $ {order.cost}
+                                        </Typography>
 
                                     </CardContent>
 
                                 </Card>
                                 <button className="btn" onClick={() => handleDelUser(order._id)} >Cancel</button>
-                                <Link className="btn" to={`/dashboard/payment/${order._id}`}>PayNow</Link>
+                                {order.payment ?
+                                    <Link className="btn" to="">Paid</Link>
+                                    :
+                                    <Link className="btn" to={`/dashboard/payment/${order._id}`}>PayNow</Link>}
                                 <Link className="btn" to="/allproducts">MoreOrder</Link>
                             </Box>
                         </Grid>
