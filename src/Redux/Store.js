@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit'
-import PropertySlice from './Slices/PropertySlice'
+// import { configureStore } from '@reduxjs/toolkit'
+// import PropertySlice from './Slices/PropertySlice'
 
-export const store = configureStore({
-  reducer: {
-      properties: PropertySlice
-  },
-})
+// export const store = configureStore({
+//   reducer: {
+//       properties: PropertySlice
+//   },
+// })

@@ -42,14 +42,13 @@ const Navbar = () => {
                                             <Link className="nav-link active" aria-current="page" to="/register"> <button style={{ color: 'white', backgroundColor: '#1010E09F', fontStyle: 'none' }} onClick={logout}>SignOut</button></Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link active" aria-current="page" to="/">{user.displayName}</Link>
+                                            <Link className="nav-link active" aria-current="page" to="/">"{user.displayName}"</Link>
                                         </li>
-                                        <Link to="/dashboard/myorder" style={{ listStyle: 'none', paddingTop: '8px' }}>
-                                            <Badge badgeContent={order.length} color="primary">
+                                        <li className="nav-item">
+                                            <Link className="nav-link active" aria-current="page" to="/dashboard/myorder"><Badge badgeContent={order.length} color="primary">
                                                 <ShoppingCartOutlined style={{ color: "white" }} />
-                                            </Badge>
-                                        </Link>
-
+                                            </Badge></Link>
+                                        </li>
 
                                     </>
                                 ) : (
