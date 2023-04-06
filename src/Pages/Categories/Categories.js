@@ -9,7 +9,7 @@ const Categories = () => {
     const [items, setItems] = useState([])
     // fake data call-------------
     useEffect(() => {
-        fetch('http://localhost:5000/categories')
+        fetch('https://e-comerce-w-s.vercel.app/categories')
             .then(res => res.json())
             .then(data => setItems(data))
     }, []);
