@@ -1,6 +1,3 @@
-#bn-size{
-    
-}
 .btn {
     padding: 6px 20px;
     margin: 17px;
@@ -10,20 +7,23 @@
     font-size: 1.5rem;
     border-radius: 16px;
     cursor: pointer;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     color: black;
     background-color: white;
-  }
-  #font-sizeh1{
-      font-size: 90px ;
-      font-weight: 700;
-      color:#f9004d;
-  }
-  #h5-color{
-      color: #da086a ;
-  }
-  /* #div-btm{
+}
+
+#font-sizeh1 {
+    font-size: 90px;
+    font-weight: 700;
+    color: #f9004d;
+}
+
+#h5-color {
+    color: #da086a;
+}
+
+/* #div-btm{
       /* margin-bottom: 100px !important; */
-  /* } */ 
+/* } */

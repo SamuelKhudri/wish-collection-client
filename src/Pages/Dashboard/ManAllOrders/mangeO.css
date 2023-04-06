@@ -1,0 +1,15 @@
+.can-upd {
+    padding: 4px 6px;
+    margin: 3px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1rem;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.can-upd:hover {
+    color: black;
+    background-color: white;
+}

@@ -19,7 +19,7 @@ const element3 = <FontAwesomeIcon icon={faPhone} />
 const Footer = () => {
     return (
         <div className="foot-text">
-            <div className="main-footer bg-dark pt-5" >
+            <div style={{ backgroundColor: "#000000f5" }} className="pt-5" >
                 <div className="container text-md-left">
                     <div className="row">
                         <div id="divH" className="col-lg-3 col-md-4 col-12 ">

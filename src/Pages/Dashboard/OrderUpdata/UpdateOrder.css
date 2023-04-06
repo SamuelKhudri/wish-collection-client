@@ -1,9 +1,11 @@
-.orderUpdate{
+/* .orderUpdate {
     width: 75%;
     margin: auto;
-    border: 1px solid brown;
- }
- .up-bg{
-     background-color: plum;
-     background-size: cover;
- }
+    border: 1px solid #822892;
+} */
+
+.up-bg {
+    align-items: center;
+    background-color: #5e2becb3;
+    background-size: cover;
+}

@@ -103,7 +103,7 @@ function Dashboard(props) {
     return (
         <Box style={{ height: '100vh' }} sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar style={{ backgroundColor: "" }}
+            <AppBar style={{ backgroundColor: "#5022f5e5" }}
                 position="fixed"
                 sx={{
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
@@ -167,7 +167,7 @@ function Dashboard(props) {
                 </Drawer>
             </Box>
             <Box
-                style={{ backgroundColor: 'rgb(9, 6, 22)', backgroundSize: 'cover' }}
+                // style={{ backgroundColor: 'rgb(9, 6, 22)', backgroundSize: 'cover' }}
                 className=""
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}

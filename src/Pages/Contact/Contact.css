@@ -1,22 +1,25 @@
-#contact{
-    background-color: hsla(0, 0%, 0%, 0.87);
+#contact {
+    background-color: #100e2a;
     padding-bottom: 50px;
 }
+
 h1.hire__text {
     font-size: 60px;
     color: white;
 }
-p.hire__text{
+
+p.hire__text {
     font-size: 18px;
     line-height: 30px;
-    color: rgb(240, 22, 149);
+    color: #e90b51;
     font-weight: 400;
 }
-input.contact{
+
+input.contact {
     display: block;
     width: 100%;
     padding: 0 20px;
-    border: 2px solid rgba(0,0,0,.1);
+    border: 2px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
@@ -28,16 +31,18 @@ input.contact{
     font-size: 15px;
     letter-spacing: .1px;
     background: none;
-    border: 2px solid hsla(0,0%,100%,.2);
+    border: 2px solid hsla(0, 0%, 100%, .2);
 }
-.contact__img{
-   margin-top: 20px;
-   height: 550px;
-   width: 600px;
-   margin-bottom: 30px;
-   border-radius: 50px;
+
+.contact__img {
+    margin-top: 20px;
+    height: 500px;
+    width: 550px;
+    margin-bottom: 30px;
+    border-radius: 50px;
 }
-textarea#message{
+
+textarea#message {
     height: 120px;
     background: none;
     padding: 0 20px;
@@ -46,10 +51,10 @@ textarea#message{
     color: #fff;
     font-size: 15px;
     letter-spacing: .1px;
-    border: 2px solid hsla(0,0%,100%,.2);
+    border: 2px solid hsla(0, 0%, 100%, .2);
 }
 
-.btn-submit{
+.btn-submit {
     padding: 10px 25px;
     border: 2px solid #ffffff87;
     border-radius: 5px;
@@ -57,8 +62,9 @@ textarea#message{
     background-color: #f9004d;
     color: white;
 }
-.btn-submit:hover{
+
+.btn-submit:hover {
     background-color: white;
     border: 2px solid #f9004d;
-    color:#f9004d ;
+    color: #f9004d;
 }

@@ -16,7 +16,7 @@ const PlaceOrder = () => {
 
     // this is for grtting id based use
     useEffect(() => {
-        const url = `https://warm-temple-88396.herokuapp.com/products/${id}`;
+        const url = `http://localhost:5000/products/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -27,7 +27,7 @@ const PlaceOrder = () => {
         // const savedCart = getStoredCart();
         // data.order = savedCart;
         console.log(data);
-        fetch('https://warm-temple-88396.herokuapp.com/orders', {
+        fetch('http://localhost:5000/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
