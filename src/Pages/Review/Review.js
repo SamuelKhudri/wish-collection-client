@@ -11,7 +11,7 @@ const Review = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://wish-collection.vercel.app/review', data)
+        axios.post('https://e-wishcollection.vercel.app/review', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

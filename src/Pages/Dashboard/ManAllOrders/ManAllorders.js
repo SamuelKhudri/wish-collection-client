@@ -25,7 +25,7 @@ const ManAllorders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('https://wish-collection.vercel.app/orders/all')
+        fetch('https://e-wishcollection.vercel.app/orders/all')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, []);
@@ -34,7 +34,7 @@ const ManAllorders = () => {
     const handleDelorder = id => {
         const proceed = window.confirm('Are you want to delete?');
         if (proceed) {
-            const url = `https://wish-collection.vercel.app/orders/all/${id}`;
+            const url = `https://e-wishcollection.vercel.app/orders/all/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

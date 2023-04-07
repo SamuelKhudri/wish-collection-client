@@ -4,7 +4,7 @@ import ShowProducts from '../ShowProducts/ShowProducts';
 const Products = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('https://wish-collection.vercel.app/products')
+        fetch('https://e-wishcollection.vercel.app/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);

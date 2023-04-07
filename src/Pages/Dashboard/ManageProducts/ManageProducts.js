@@ -8,7 +8,7 @@ const AllProducts = () => {
     const [products, setProducts] = useState([])
     // fake data call-------------
     useEffect(() => {
-        fetch('https://wish-collection.vercel.app/products')
+        fetch('https://e-wishcollection.vercel.app/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
@@ -18,7 +18,7 @@ const AllProducts = () => {
     const handleDelproducts = id => {
         const proceed = window.confirm('Are you want to delete?');
         if (proceed) {
-            const url = `https://wish-collection.vercel.app/products/${id}`;
+            const url = `https://e-wishcollection.vercel.app/products/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

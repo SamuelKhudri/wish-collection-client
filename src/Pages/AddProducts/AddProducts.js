@@ -10,7 +10,7 @@ const AddProducts = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://wish-collection.vercel.app/products', data)
+        axios.post('https://e-wishcollection.vercel.app/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

@@ -12,7 +12,7 @@ const Payment = () => {
     const { orderId } = useParams()
     const [payment, setPayment] = useState({});
     useEffect(() => {
-        fetch(`https://wish-collection.vercel.app/orders/${orderId}`)
+        fetch(`https://e-wishcollection.vercel.app/orders/${orderId}`)
             .then(res => res.json())
             .then(data => setPayment(data));
     }, [orderId]);

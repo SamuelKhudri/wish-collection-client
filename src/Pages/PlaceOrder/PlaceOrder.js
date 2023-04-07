@@ -16,7 +16,7 @@ const PlaceOrder = () => {
 
     // this is for grtting id based use
     useEffect(() => {
-        const url = `https://wish-collection.vercel.app/products/${id}`;
+        const url = `https://e-wishcollection.vercel.app/products/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data))
@@ -27,7 +27,7 @@ const PlaceOrder = () => {
         // const savedCart = getStoredCart();
         // data.order = savedCart;
         console.log(data);
-        fetch('https://wish-collection.vercel.app/orders', {
+        fetch('https://e-wishcollection.vercel.app/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
