@@ -10,7 +10,7 @@ const AddProducts = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('https://e-comerce-w-s.vercel.app/products', data)
+        axios.post('http://localhost:5000/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

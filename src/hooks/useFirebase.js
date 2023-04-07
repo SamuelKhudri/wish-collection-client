@@ -85,7 +85,7 @@ const useFirebase = () => {
     // admin fetch from database users collection
 
     useEffect(() => {
-        fetch(`https://e-comerce-w-s.vercel.app/users/${user.email}`)
+        fetch(`http://localhost:5000/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email]);
@@ -102,7 +102,7 @@ const useFirebase = () => {
     // get new users register data here
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('https://e-comerce-w-s.vercel.app/users', {
+        fetch('http://localhost:5000/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

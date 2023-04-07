@@ -10,7 +10,7 @@ const MyOrder = () => {
     const { user } = useAuth();
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        const url = `https://e-comerce-w-s.vercel.app/orders?email=${user.email}`
+        const url = `http://localhost:5000/orders?email=${user.email}`
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data));
@@ -20,7 +20,7 @@ const MyOrder = () => {
     const handleDelUser = id => {
         const proceed = window.confirm('Are you want to delete?');
         if (proceed) {
-            const url = `https://e-comerce-w-s.vercel.app/orders/${id}`;
+            const url = `http://localhost:5000/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

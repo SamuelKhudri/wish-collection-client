@@ -10,7 +10,7 @@ const OrderUpdate = () => {
 
 
     useEffect(() => {
-        const url = `https://e-comerce-w-s.vercel.app/orders/${id}`;
+        const url = `http://localhost:5000/orders/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setUser(data))
@@ -39,7 +39,7 @@ const OrderUpdate = () => {
 
     // update user function handle 
     const handleUpdataUser = e => {
-        const url = `https://e-comerce-w-s.vercel.app/orders/${id}`;
+        const url = `http://localhost:5000/orders/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
