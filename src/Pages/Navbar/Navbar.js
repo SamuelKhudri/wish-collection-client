@@ -13,7 +13,7 @@ const Navbar = () => {
     // orders fetch based on email because of showing cart
     const [order, setOrder] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/orders/cart?email=${user.email}`
+        const url = `https://wish-collection.vercel.app/orders/cart?email=${user.email}`
         fetch(url)
             .then(res => res.json())
             .then(data => setOrder(data));

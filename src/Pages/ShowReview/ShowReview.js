@@ -8,7 +8,7 @@ const ShowReview = () => {
     const [review, setReview] = useState([])
     // fake data call-------------
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://wish-collection.vercel.app/review')
             .then(res => res.json())
             .then(data => setReview(data))
     }, []);
