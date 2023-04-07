@@ -9,7 +9,7 @@ const Categories = () => {
     const [items, setItems] = useState([])
     // fake data call-------------
     useEffect(() => {
-        fetch('https://e-wishcollection.vercel.app/categories')
+        fetch('https://e-wishcollection.vercel.app/categories/all')
             .then(res => res.json())
             .then(data => setItems(data))
     }, []);
